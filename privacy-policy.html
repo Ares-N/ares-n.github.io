@@ -221,25 +221,26 @@
         <span class="fin">Fin</span><span class="eye">eye</span><span class="sse">sse</span>
       </div>
     </div>
-    <div class="badge">Effective April 2026</div>
+    <div class="badge">Effective May 2026</div>
     <h1 class="page-title">Privacy Policy</h1>
     <p class="page-subtitle">How Fineyesse handles your data — clearly and honestly.</p>
   </div>
 
   <div class="highlight">
     <div class="highlight-icon">🔒</div>
-    <p><strong>The short version:</strong> Your financial data is stored only in your own Google account. We never see it, never store it on our servers, and never share it with anyone. SMS is read on-device only and never transmitted anywhere.</p>
+    <p><strong>The short version:</strong> Your financial data is stored only in your own Google account. We never see it, never store it on our servers, and never sell or share it with anyone. SMS messages and bank emails are processed on-device or via your own Google account only — never transmitted to us.</p>
   </div>
 
   <div class="section">
     <div class="section-number">01</div>
     <div class="section-title">Information We Collect</div>
-    <p>Fineyesse does not collect, store, or transmit any personal or financial data to our servers. The app operates entirely on your device and your personal Google account.</p>
+    <p>Fineyesse does not collect, store, or transmit any personal or financial data to our servers. The app operates entirely on your device and within your personal Google account.</p>
     <ul class="key-points">
       <li>We do not maintain any database of user information</li>
       <li>We do not collect usage analytics or behavioural data</li>
       <li>We do not track your location</li>
       <li>We do not use advertising identifiers</li>
+      <li>We do not sell your data to any third party, ever</li>
     </ul>
   </div>
 
@@ -258,48 +259,64 @@
   <div class="section">
     <div class="section-number">03</div>
     <div class="section-title">SMS Access</div>
-    <p>Fineyesse requests permission to read SMS messages on your device to automatically detect bank transactions. This is the core functionality of the app.</p>
+    <p>Fineyesse requests permission to read SMS messages on your device to automatically detect bank transactions. This is a core feature of the app.</p>
     <ul class="key-points">
       <li>We read only SMS messages from known bank sender IDs (e.g. HDFCBK, ICICIB, SBIPSG)</li>
       <li>Personal SMS messages are never read or processed</li>
-      <li>SMS content is processed entirely on your device</li>
-      <li>No SMS content is ever transmitted to any server</li>
+      <li>SMS content is processed entirely on your device — never transmitted anywhere</li>
+      <li>No SMS content ever reaches our servers or any third-party server</li>
       <li>Parsed transaction data is saved only to your personal Google Sheet</li>
     </ul>
   </div>
 
   <div class="section">
     <div class="section-number">04</div>
-    <div class="section-title">Data Storage & Security</div>
-    <p>All your financial data is stored exclusively in your personal Google Sheet in your Google Drive account. Fineyesse has no server-side storage of any kind.</p>
+    <div class="section-title">Gmail Access</div>
+    <p>Fineyesse optionally requests read-only access to your Gmail account to detect bank transaction emails automatically. This is used alongside SMS detection to catch transactions that arrive via email rather than SMS.</p>
     <ul class="key-points">
-      <li>Zero server-side storage — we have no database</li>
-      <li>All communication with Google APIs uses encrypted HTTPS</li>
-      <li>Biometric authentication protects app access on your device</li>
-      <li>Screenshot prevention is enabled to protect your financial data</li>
+      <li>We request the minimum Gmail scope required — read-only access to messages</li>
+      <li>Only emails from known bank senders are scanned for transaction data</li>
+      <li>Email content is processed using the Gmail API on your behalf — your email data is never stored on our servers</li>
+      <li>No email content is retained, logged, or shared</li>
+      <li>Parsed transaction data is saved only to your personal Google Sheet</li>
+      <li>You can revoke Gmail access at any time via your Google account settings</li>
     </ul>
+    <p style="margin-top: 14px;">Fineyesse's use of Gmail data is limited to reading transaction-related emails for the purpose of automatically logging your financial activity. We do not use Gmail data for advertising, profiling, or any purpose beyond this feature.</p>
   </div>
 
   <div class="section">
     <div class="section-number">05</div>
-    <div class="section-title">Third Party Services</div>
-    <p>Fineyesse uses the following third party services:</p>
+    <div class="section-title">Data Storage &amp; Security</div>
+    <p>All your financial data is stored exclusively in your personal Google Sheet in your Google Drive account. Fineyesse has no server-side storage of any kind.</p>
     <ul class="key-points">
-      <li>Google Sign-In — for authentication. <a href="https://policies.google.com/privacy" style="color: var(--blue-light);">Google Privacy Policy</a></li>
-      <li>Google Sheets API — for storing your financial data in your own account</li>
-      <li>Google Drive API — for creating and managing your spreadsheet</li>
+      <li>Zero server-side storage — we have no database</li>
+      <li>All communication with Google APIs uses encrypted HTTPS</li>
+      <li>Biometric authentication (fingerprint / face unlock) protects app access on your device</li>
+      <li>Screenshot prevention is enabled to protect your financial data on-screen</li>
     </ul>
-    <p style="margin-top: 14px;">No other third party services, analytics tools, or advertising networks are used.</p>
   </div>
 
   <div class="section">
     <div class="section-number">06</div>
+    <div class="section-title">Third-Party Services</div>
+    <p>Fineyesse uses the following third-party services, all of which operate within your own Google account:</p>
+    <ul class="key-points">
+      <li>Google Sign-In — for authentication. <a href="https://policies.google.com/privacy" style="color: var(--blue-light);">Google Privacy Policy</a></li>
+      <li>Google Sheets API — for storing your financial data in your own account</li>
+      <li>Google Drive API — for creating and managing your spreadsheet</li>
+      <li>Gmail API — for reading bank transaction emails on your behalf (optional, requires your permission)</li>
+    </ul>
+    <p style="margin-top: 14px;">No other third-party services, analytics tools, advertising networks, or data brokers are used.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-number">07</div>
     <div class="section-title">Children's Privacy</div>
     <p>Fineyesse is not intended for use by anyone under the age of 13. We do not knowingly collect any information from children under 13. If you believe a child has used the app, please contact us and we will take appropriate action.</p>
   </div>
 
   <div class="section">
-    <div class="section-number">07</div>
+    <div class="section-number">08</div>
     <div class="section-title">Changes to This Policy</div>
     <p>We may update this Privacy Policy from time to time. Any changes will be reflected with an updated date at the top of this page. Continued use of the app after changes constitutes your acceptance of the updated policy.</p>
   </div>
@@ -318,7 +335,7 @@
 
   <div class="footer">
     <p>© 2026 Fineyesse. All rights reserved.</p>
-    <p>Last updated: April 2026</p>
+    <p>Last updated: May 2026</p>
   </div>
 </div>
 </body>
